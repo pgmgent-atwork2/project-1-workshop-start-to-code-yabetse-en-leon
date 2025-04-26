@@ -224,7 +224,7 @@
                 <p>Wat deze functie doet:</p>
                 <ol>
                     <li>We vinden alle vraag-containers op de pagina en resetten de score naar 0</li>
-                    <li>Dan doorlopen we elke vraag met <code>forEach</code>: 
+                    <li>Dan doorlopen we elke vraag met <code>forEach</code>:
                         <ul>
                             <li>We zoeken het geselecteerde antwoord (de aangevinkte radio button)</li>
                             <li>We kijken of dat antwoord correct is door het <code>data-correct</code> attribuut te
@@ -242,11 +242,13 @@
                 </ol>
                 <h3>3.4: Functie finaliseren</h3>
                 <p>In deze laatste stap:</p>
-                    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="YPPxWgj" data-pen-title="Untitled" data-user="Leon-Smits" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                        <span>See the Pen <a href="https://codepen.io/Leon-Smits/pen/YPPxWgj">
-                        Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
+                <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="YPPxWgj"
+                    data-pen-title="Untitled" data-user="Leon-Smits"
+                    style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/Leon-Smits/pen/YPPxWgj">
+                            Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
                         on <a href="https://codepen.io">CodePen</a>.</span>
-                    </p>
+                </p>
                 <ol>
                     <li>
                         We voegen een regel toe in onze <code>generateQuiz</code> functie om <code>showQuestions</code>
@@ -258,14 +260,16 @@
                     </li>
                     <li>
                         Helemaal onderaan roepen we de <code>generateQuiz</code> functie aan met al onze variabelen om
-                        de quiz  starten
+                        de quiz starten
                     </li>
                 </ol>
                 <p>Als je alle stappen correct hebt gevolgd, zou je script.js er als volgt moeten uitzien:</p>
-                <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="emmEzaB" data-pen-title="Untitled" data-user="Leon-Smits" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="emmEzaB"
+                    data-pen-title="Untitled" data-user="Leon-Smits"
+                    style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                     <span>See the Pen <a href="https://codepen.io/Leon-Smits/pen/emmEzaB">
-                    Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
-                    on <a href="https://codepen.io">CodePen</a>.</span>
+                            Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
                 <div>
                     <a href="#stap2" class="previous-step">Vorige stap</a>
@@ -276,23 +280,40 @@
                 <h2>Stap 4: Styling</h2>
                 <p>
                     Nu heb je de basis van hoe je een quiz maakt in HTML en JavaScript. Nu kun je alles stylen zoals je
-                    wilt
+                    wilt. Dit doe je in je main.css bestand. Hierin kun je:
+                </p>
+                <ul>
+                    <li>Kleuren toevoegen aan je quiz</li>
+                    <li>De lettertypen veranderen</li>
+                    <li>marges en padding toevoegen aan elementen</li>
+                    <li>Effecten toevoegen zoals schaduwen of afgeronde hoeken</li>
+                    <li>De quiz responsive maken, zodat deze er goed blijft uitzien op verschillende schermen</li>
+                </ul>
+                <p>Enkele eenvoudige CSS-eigenschappen die je kunt gebruiken zijn:</p>
+                <ul>
+                    <li>color: Voor tekstkleur</li>
+                    <li>background-color: Voor achtergrondkleur</li>
+                    <li>font-family: Voor het lettertype</li>
+                    <li>padding: Voor ruimte binnen een element</li>
+                    <li>margin: Voor ruimte buiten een element</li>
+                    <li>border-radius: Voor afgeronde hoeken</li>
+                    <li>box-shadow: Voor schaduwen rond elementen</li>
+                </ul>
+                <p>
+                    Deze code zorgt al voor een styling aan de quiz. Je kunt deze kopieren en in je main.css plakken,
+                    maar pas gerust dingen aan en experimenteer zelf met de verschillende CSS-eigenschappen. De
+                    mogelijkheden zijn eindeloos!!!
+                </p>
+                <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="Gggvjqa" data-pen-title="Untitled" data-user="Leon-Smits" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/Leon-Smits/pen/Gggvjqa">
+                    Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
                 <div class="code-example">
                     <!-- CODE SNIPPET -->
                 </div>
                 <div>
                     <a href="#stap3" class="previous-step">Vorige stap</a>
-                    <a href="#stap5" class="next-step">Volgende stap</a>
-                </div>
-            </section>
-            <section id="stap5">
-                <h2>Stap 5: Styling</h2>
-                <div class="code-example">
-                    <!-- CODE SNIPPET -->
-                </div>
-                <div>
-                    <a href="#stap4" class="previous-step">Vorige stap</a>
                 </div>
             </section>
         </section>
