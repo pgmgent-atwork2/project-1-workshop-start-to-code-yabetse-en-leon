@@ -65,6 +65,7 @@
                     Kopieer de volgende startcode en plak deze in je index.html. Lees de commentaar in de code voor meer
                     uitleg over de verschillende elementen.
                 </p>
+
                 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WbbEvpd"
                     data-pen-title="Untitled" data-user="Leon-Smits"
                     style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -72,6 +73,7 @@
                             Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
                         on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
+
                 <p>
                     Dit is de basisstructuur van je quiz. Let op dat we onderaan het document koppelingen naar
                     JavaScript bestanden hebben toegevoegd. Het is zeer belangrijk dat questions.js boven script.js
@@ -101,6 +103,7 @@
                     vragen zullen nog niet zichtbaar zijn in de browser. Lees
                     ook de commentaar in de code voor extra hulp.
                 </p>
+
                 <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="qEEXbLg"
                     data-pen-title="Untitled" data-user="Leon-Smits"
                     style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -108,6 +111,7 @@
                             Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
                         on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
+
                 <p>
                     Nu hebben we een lijst met quizvragen! In de volgende stap gaan we code schrijven om deze vragen aan
                     de gebruiker te tonen.
@@ -134,6 +138,7 @@
                     We gaan eerst de basis van ons script.js bestand opzetten. Hierin bepalen we eerst onze
                     hoofdfunctie en enkele variabelen:
                 </p>
+
                 <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="wBBqGZj"
                     data-pen-title="Untitled" data-user="Leon-Smits"
                     style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -141,6 +146,7 @@
                             Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
                         on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
+
                 <p>In deze code gebeurt het volgende:</p>
                 <ol>
                     <li>
@@ -162,8 +168,10 @@
                 </ol>
                 <h3>3.2: De showQuestions functie maken</h3>
                 <p>
-                    Nu gaan we een functie maken om de vragen op de pagina te tonen:
+                    Nu gaan we een functie maken om de vragen op de pagina te tonen. Kopieer de volgende code en plak
+                    deze in de <code>generateQuiz</code> functie onder <code>let score = 0;</code>.
                 </p>
+
                 <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="XJJaKXb"
                     data-pen-title="Untitled" data-user="Leon-Smits"
                     style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -171,7 +179,8 @@
                             Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
                         on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
-                <p>Wat deze functie doet:
+
+                <p>Wat deze functie doet:</p>
                 <ol>
                     <li>
                         We maken eerst een lege array (lijst) genaamd <code>questionList</code> om alle HTML voor vragen
@@ -200,18 +209,75 @@
                     </li>
                     <li>Tenslotte zetten we nu alle gemaakt HTML in de <code>quizContainer</code></li>
                 </ol>
+                <h3>3.3: De showResults functie maken</h3>
+                <p>Nu maken we een functie om te controleren of de antwoorden correct zijn. Kopieer de volgende code en
+                    plak deze in de generateQuiz functie onder de <code>showQuestions</code> functie.</p>
+
+                <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="xbbLOar"
+                    data-pen-title="Untitled" data-user="Leon-Smits"
+                    style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/Leon-Smits/pen/xbbLOar">
+                            Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
-                <div class="code-example">
-                    <!-- CODE SNIPPET -->
-                </div>
+
+                <p>Wat deze functie doet:</p>
+                <ol>
+                    <li>We vinden alle vraag-containers op de pagina en resetten de score naar 0</li>
+                    <li>Dan doorlopen we elke vraag met <code>forEach</code>: 
+                        <ul>
+                            <li>We zoeken het geselecteerde antwoord (de aangevinkte radio button)</li>
+                            <li>We kijken of dat antwoord correct is door het <code>data-correct</code> attribuut te
+                                controleren</li>
+                            <li>Als het antwoord correct is, verhogen we de score en tonen we een "JUIST!" bericht</li>
+                            <li>Als het antwoord fout is, zoeken we het juiste antwoord en tonen dat en komt en een
+                                "FOUT" bericht</li>
+                            <li>
+                                We maken alle radio buttons disabled zodat de gebruiker niet meer kan veranderen na het
+                                nakijken
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Als laatste tonen we de totale score op het scherm en verbergen de submit knop</li>
+                </ol>
+                <h3>3.4: Functie finaliseren</h3>
+                <p>In deze laatste stap:</p>
+                    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="YPPxWgj" data-pen-title="Untitled" data-user="Leon-Smits" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/Leon-Smits/pen/YPPxWgj">
+                        Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                <ol>
+                    <li>
+                        We voegen een regel toe in onze <code>generateQuiz</code> functie om <code>showQuestions</code>
+                        direct aan te roepen en de vragen te tonen
+                    </li>
+                    <li>
+                        We voegen een event listener toe aan de submit knop, zodat wanneer erop wordt geklikt, de
+                        functie <code>showResults</code> wordt aangeroepen
+                    </li>
+                    <li>
+                        Helemaal onderaan roepen we de <code>generateQuiz</code> functie aan met al onze variabelen om
+                        de quiz  starten
+                    </li>
+                </ol>
+                <p>Als je alle stappen correct hebt gevolgd, zou je script.js er als volgt moeten uitzien:</p>
+                <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="emmEzaB" data-pen-title="Untitled" data-user="Leon-Smits" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/Leon-Smits/pen/emmEzaB">
+                    Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
                 <div>
                     <a href="#stap2" class="previous-step">Vorige stap</a>
                     <a href="#stap4" class="next-step">Volgende stap</a>
                 </div>
             </section>
             <section id="stap4">
-                <h2>Stap 4: Voeg alles samen</h2>
-                <p></p>
+                <h2>Stap 4: Styling</h2>
+                <p>
+                    Nu heb je de basis van hoe je een quiz maakt in HTML en JavaScript. Nu kun je alles stylen zoals je
+                    wilt
+                </p>
                 <div class="code-example">
                     <!-- CODE SNIPPET -->
                 </div>
@@ -222,8 +288,6 @@
             </section>
             <section id="stap5">
                 <h2>Stap 5: Styling</h2>
-                <p>Nu heb je de basis van hoe je een quiz maakt in HTML en JavaScript. Nu kun je alles stylen zoals je
-                    wilt</p>
                 <div class="code-example">
                     <!-- CODE SNIPPET -->
                 </div>
@@ -239,7 +303,7 @@
         </section>
     </main>
     <footer>
-        <p>Copyright &copy;</p>
+        <p>Copyright &copy; 2025 Yabetse en Leon</p>
     </footer>
     <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
