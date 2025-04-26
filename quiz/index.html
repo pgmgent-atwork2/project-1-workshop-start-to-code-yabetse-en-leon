@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css"> <!-- Hier laden we het css bestand in om de styling te bepalen -->
     <title>Simple Quiz</title> <!-- Dit is de titel van het document en verschijnt bovenaan als titel in het tabblad-->
 </head>
 <body>
-    <h1>Simple Quiz</h1>
+    <h1>Simple Quiz</h1> <!-- Dit is de titel van de quiz die bovenaan de pagina verschijnt -->
 
     <div id="quiz-container">
         <!-- Hier zullen de vragen worden ingeladen -->
     </div>
 
-    <button id="submit-button" class="submit-button">Klaar!</button>
+    <button id="submit-button" class="submit-button">Klaar!</button> <!-- Dit is de knop om de antwoorden in te dienen -->
 
     <div id="results" class="results hidden">
         <h2>Resultaat</h2>
         <p>Score: <span id="score"></span><!-- Hier zal de eindscore worden ingeladen --> op 15</p>
     </div>
 
+    <!-- Hier laden we beide JavaScript bestanden in -->
     <script src="js/questions.js"></script>
     <script src="js/script.js"></script>
 </body>

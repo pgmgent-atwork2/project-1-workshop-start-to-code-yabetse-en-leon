@@ -10,12 +10,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
     <link rel="manifest" href="assets/images/site.webmanifest" />
     <link rel="stylesheet" href="css/reset.css">
-    <title>Quiz App</title>
+    <title>Tutorial: Quiz</title>
 </head>
 
 <body>
     <header>
-        <h2>Quiz tutorial</h2>
     </header>
     <main>
         <section>
@@ -27,8 +26,10 @@
             <section id="setup">
                 <h2>Setup</h2>
                 <p>Voor we aan de slag kunnen, installeren we eerst Visual Studio Code en een paar extensies</p>
-                <p>Je kunt Visual Studio Code downloaden via: <a href="https://code.visualstudio.com/"
-                        target="_blank">https://code.visualstudio.com/</a></p>
+                <p>
+                    Je kunt Visual Studio Code downloaden via: <a href="https://code.visualstudio.com/"
+                        target="_blank">https://code.visualstudio.com/</a>
+                </p>
                 <p>Na de installatie is het handig om deze extensies te installeren:</p>
                 <ul>
                     <li>Live Server (om je website direct te bekijken)</li>
@@ -42,8 +43,11 @@
                     <li>script.js (Om logica te schrijven en de quiz interactief te maken)</li>
                     <li>questions.js (Hier vul je de vragen en antwoorden in van de quiz)</li>
                 </ul>
-                <p>Tip: Je kunt een map genaamd "quiz" aanmaken en daarin de 4 bestanden plaatsen om alles georganiseerd
-                    te houden</p>
+                <p>
+                    Tip: Je kunt een map genaamd "quiz" aanmaken en daarin de 4 bestanden plaatsen om alles
+                    georganiseerd
+                    te houden
+                </p>
                 <a href="#stap1" class="next-step">Volgende stap</a>
             </section>
             <section id="stap1">
@@ -52,14 +56,26 @@
                 <p>Voor onze quiz hebben we nodig:</p>
                 <ul>
                     <li>Een titel voor de quiz</li>
-                    <li>Een container voor alle vragen</li>
+                    <li>Een container waar alle vragen in komen te staan</li>
                     <li>Een knop om de antwoorden te controleren</li>
-                    <li>Een resultatengedeelte waar de score getoond wordt</li>
+                    <li>Een resultatengedeelte waar de finale score getoond wordt</li>
                 </ul>
-                <div class="code-example">
-                    <!-- CODE SNIPPET -->
-                </div>
-                <p>Dit is de basisstructuur van je quiz.</p>
+                <p>
+                    Kopieer de volgende startcode en plak deze in je index.html. Lees de commentaar in de code voor meer
+                    uitleg over de verschillende elementen.
+                </p>
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WbbEvpd"
+                    data-pen-title="Untitled" data-user="Leon-Smits"
+                    style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/Leon-Smits/pen/WbbEvpd">
+                            Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <p>
+                    Dit is de basisstructuur van je quiz. Let op dat we onderaan het document koppelingen naar
+                    JavaScript bestanden hebben toegevoegd. Het is zeer belangrijk dat questions.js boven script.js
+                    staat. Anders zullen de vragen niet worden ingeladen.
+                </p>
                 <div>
                     <a href="#setup" class="previous-step">Vorige stap</a>
                     <a href="#stap2" class="next-step">Volgende stap</a>
@@ -67,7 +83,29 @@
             </section>
             <section id="stap2">
                 <h2>Stap 2: Toon de vragen</h2>
-                <p></p>
+                <p>Nu gaan we de vragen voor onze quiz maken. Dit doen we door een lijst te maken in questions.js met
+                    vragen en antwoorden.</p>
+                <p>In questions.js maken we een array (een lijst) van objecten, waarbij elk object een vraag voorstelt.
+                </p>
+                <p>Voor elke vraag willen we de volgende zaken opslaan:</p>
+                <ul>
+                    <li>De tekst van de vraag</li>
+                    <li>Een lijst met mogelijke antwoorden</li>
+                    <li>Voor elk antwoord: of het correct is of niet</li>
+                </ul>
+                <p>
+                    Kopieer nu de volgende code en plak deze in questions.js. Opgelet! De code is niet volledig. Je hebt
+                    5 voorbeeldvragen gekregen en het is de bedoeling dat je nog 10 extra vragen bedenkt en toevoegt. In
+                    het begin word je nog geholpen, maar de laatste 5 vragen zul je volledig zelf moeten schrijven. Lees
+                    ook de commentaar in de code voor extra hulp
+                </p>
+                <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="qEEXbLg"
+                    data-pen-title="Untitled" data-user="Leon-Smits"
+                    style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/Leon-Smits/pen/qEEXbLg">
+                            Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
                 <div class="code-example">
                     <!-- CODE SNIPPET -->
                 </div>
@@ -100,7 +138,8 @@
             </section>
             <section id="stap5">
                 <h2>Stap 5: Styling</h2>
-                <p>Nu heb je de basis van hoe je een quiz maakt in HTML en JavaScript. Nu kun je alles stylen zoals je wilt</p>
+                <p>Nu heb je de basis van hoe je een quiz maakt in HTML en JavaScript. Nu kun je alles stylen zoals je
+                    wilt</p>
                 <div class="code-example">
                     <!-- CODE SNIPPET -->
                 </div>
@@ -118,6 +157,8 @@
     <footer>
         <p>Copyright &copy;</p>
     </footer>
+    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
 </body>
 
 </html>
