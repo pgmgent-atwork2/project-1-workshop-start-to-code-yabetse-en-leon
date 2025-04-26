@@ -15,6 +15,7 @@
 
 <body>
     <header>
+        <h2>Tutorial: Quiz</h2>
     </header>
     <main>
         <section>
@@ -96,8 +97,9 @@
                 <p>
                     Kopieer nu de volgende code en plak deze in questions.js. Opgelet! De code is niet volledig. Je hebt
                     5 voorbeeldvragen gekregen en het is de bedoeling dat je nog 10 extra vragen bedenkt en toevoegt. In
-                    het begin word je nog geholpen, maar de laatste 5 vragen zul je volledig zelf moeten schrijven. Lees
-                    ook de commentaar in de code voor extra hulp
+                    het begin word je nog geholpen, maar de laatste 5 vragen zul je volledig zelf moeten schrijven. Deze
+                    vragen zullen nog niet zichtbaar zijn in de browser. Lees
+                    ook de commentaar in de code voor extra hulp.
                 </p>
                 <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="qEEXbLg"
                     data-pen-title="Untitled" data-user="Leon-Smits"
@@ -106,17 +108,43 @@
                             Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
                         on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
-                <div class="code-example">
-                    <!-- CODE SNIPPET -->
-                </div>
+                <p>
+                    Nu hebben we een lijst met quizvragen! In de volgende stap gaan we code schrijven om deze vragen aan
+                    de gebruiker te tonen.
+                </p>
                 <div>
                     <a href="#stap1" class="previous-step">Vorige stap</a>
                     <a href="#stap3" class="next-step">Volgende stap</a>
                 </div>
             </section>
             <section id="stap3">
-                <h2>Stap 3: Toon de finale score en juiste antwoorden</h2>
-                <p></p>
+                <h2>Stap 3: Functionaliteit van de quiz</h2>
+                <p>Nu we de vragen hebben, is het tijd om de quiz functioneel te maken. In deze stap gaan we JavaScript
+                    gebruiken om:</p>
+                <ul>
+                    <li>De vragen op de pagina te tonen</li>
+                    <li>De antwoorden te controleren</li>
+                    <li>De score bij te houden</li>
+                    <li>Feedback te geven over welke antwoorden juist of fout waren</li>
+                </ul>
+                <p>We gaan eerst de basis van ons script.js bestand opzetten. Hierin definiëren we eerst onze
+                    hoofdfunctie en enkele variabelen:</p>
+                <p>In deze code gebeurt het volgende:
+                <ol>
+                    <li>We maken een hoofdfunctie <code>generateQuiz</code> die vier parameters accepteert: 
+                        <ul>
+                            <li><code>questions</code>: onze lijst met vragen uit questions.js</li>
+                            <li><code>quizContainer</code>: het HTML element waar de vragen in komen</li>
+                            <li><code>resultsContainer</code>: het HTML element waar het resultaat in komt</li>
+                            <li><code>submitButton</code>: de knop om antwoorden te controleren</li>
+                        </ul>
+                    </li>
+                    <li>We definiëren een <code>score</code> variabele die bijhoudt hoeveel vragen correct beantwoord
+                        zijn</li>
+                    <li>Onderaan selecteren we de HTML elementen met hun ID's (zoals we ze hebben genoemd in index.html)</li>
+                </ol>
+                </p>
+
                 <div class="code-example">
                     <!-- CODE SNIPPET -->
                 </div>
