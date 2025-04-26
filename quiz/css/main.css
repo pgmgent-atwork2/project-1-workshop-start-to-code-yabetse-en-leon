@@ -1,4 +1,4 @@
-// Algemene styling
+/* Algemene styling */
 body {
     font-family: Arial, sans-serif;
     max-width: 50rem;
@@ -7,14 +7,14 @@ body {
     color: #14264a;
 }
 
-// Hoofditel van de quiz
+/* Hoofditel van de quiz */
 h1 {
     color: #edd7d9;
     text-align: center;
     margin-bottom: 1.9rem;
 }
 
-// STyling voor de vragen
+/* STyling voor de vragen */
 .question {
     margin-bottom: 1.2rem;
     padding: 0.9rem;
@@ -68,7 +68,7 @@ h1 {
     margin-top: 0.6rem;
 }
 
-// Styling voor de resultaten
+/* Styling voor de resultaten */
 .results {
     text-align: center;
     padding: 1.2rem;
