@@ -119,19 +119,32 @@
             </section>
             <section id="stap3">
                 <h2>Stap 3: Functionaliteit van de quiz</h2>
-                <p>Nu we de vragen hebben, is het tijd om de quiz functioneel te maken. In deze stap gaan we JavaScript
-                    gebruiken om:</p>
+                <p>
+                    Nu we de vragen hebben, is het tijd om de quiz functioneel te maken. In deze stap gaan we JavaScript
+                    gebruiken om:
+                </p>
                 <ul>
                     <li>De vragen op de pagina te tonen</li>
                     <li>De antwoorden te controleren</li>
                     <li>De score bij te houden</li>
                     <li>Feedback te geven over welke antwoorden juist of fout waren</li>
                 </ul>
-                <p>We gaan eerst de basis van ons script.js bestand opzetten. Hierin definiëren we eerst onze
-                    hoofdfunctie en enkele variabelen:</p>
-                <p>In deze code gebeurt het volgende:
+                <h3>3.1: De basis van script.js maken</h3>
+                <p>
+                    We gaan eerst de basis van ons script.js bestand opzetten. Hierin bepalen we eerst onze
+                    hoofdfunctie en enkele variabelen:
+                </p>
+                <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="wBBqGZj"
+                    data-pen-title="Untitled" data-user="Leon-Smits"
+                    style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/Leon-Smits/pen/wBBqGZj">
+                            Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <p>In deze code gebeurt het volgende:</p>
                 <ol>
-                    <li>We maken een hoofdfunctie <code>generateQuiz</code> die vier parameters accepteert: 
+                    <li>
+                        We maken een hoofdfunctie <code>generateQuiz</code> die vier parameters accepteert:
                         <ul>
                             <li><code>questions</code>: onze lijst met vragen uit questions.js</li>
                             <li><code>quizContainer</code>: het HTML element waar de vragen in komen</li>
@@ -139,12 +152,55 @@
                             <li><code>submitButton</code>: de knop om antwoorden te controleren</li>
                         </ul>
                     </li>
-                    <li>We definiëren een <code>score</code> variabele die bijhoudt hoeveel vragen correct beantwoord
-                        zijn</li>
-                    <li>Onderaan selecteren we de HTML elementen met hun ID's (zoals we ze hebben genoemd in index.html)</li>
+                    <li>
+                        We definiëren een <code>score</code> variabele die bijhoudt hoeveel vragen correct beantwoord
+                        zijn
+                    </li>
+                    <li>
+                        Onderaan selecteren we de HTML elementen met hun ID's (zoals we ze hebben genoemd in index.html)
+                    </li>
+                </ol>
+                <h3>3.2: De showQuestions functie maken</h3>
+                <p>
+                    Nu gaan we een functie maken om de vragen op de pagina te tonen:
+                </p>
+                <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="XJJaKXb"
+                    data-pen-title="Untitled" data-user="Leon-Smits"
+                    style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/Leon-Smits/pen/XJJaKXb">
+                            Untitled</a> by Leon Smits (<a href="https://codepen.io/Leon-Smits">@Leon-Smits</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <p>Wat deze functie doet:
+                <ol>
+                    <li>
+                        We maken eerst een lege array (lijst) genaamd <code>questionList</code> om alle HTML voor vragen
+                        in op te slaan.
+                    </li>
+                    <li>
+                        Dan gebruiken we <code>forEach</code> om door elke vraag in onze lijst te lopen:
+                        <ul>
+                            <li>
+                                Voor elke vraag maken we een nieuwe lege lijst <code>answers</code> voor de
+                                antwoordopties
+                            </li>
+                            <li>
+                                We gebruiken nog een <code>forEach</code> om door elk antwoord te lopen en maken daar
+                                HTML voor
+                            </li>
+                            <li>
+                                Voor elk antwoord maken we een label met een radio button, waarbij we ook opslaan of het
+                                antwoord correct is
+                            </li>
+                            <li>
+                                Dan voegen we alle antwoorden samen met de vraag in een <code>div</code>-element dat we
+                                dan aan <code>questionList</code> toevoegen
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Tenslotte zetten we nu alle gemaakt HTML in de <code>quizContainer</code></li>
                 </ol>
                 </p>
-
                 <div class="code-example">
                     <!-- CODE SNIPPET -->
                 </div>
