@@ -35,14 +35,14 @@ De tutorial is verdeeld over vier fasen:
 3. **JavaScript** – Functionaliteit toevoegen  
 4. **CSS** – Styling en layout toepassen
 
-📌 Inclusief:
+  Inclusief:
 - Interactieve **CodePen-voorbeelden**  
 - Uitleg bij elke codesectie  
 - Responsive design – werkt op zowel desktop als mobiel  
 
 ---
 
-## 👨‍🎓 Makers
+## Makers
 
 - **Studenten:** Leon Smits & Yabetse Solomon  
 - **Klas:** 1B2  
