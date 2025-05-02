@@ -6,29 +6,47 @@ https://www.figma.com/board/nSyTsKXOcx3XVRidqjWOR8/Untitled?node-id=3-158&t=vgwQ
 
 ## 📌 Over dit project
 
-Deze repository bevat een interactieve quizapplicatie die gebouwd is met **HTML**, **CSS** en **JavaScript**. De quiz stelt gebruikers in staat om meerkeuzevragen te beantwoorden en direct feedback en een score te ontvangen. Dit project is gemaakt in het kader van de lessen rond basis JavaScript en DOM-manipulatie.
+Deze repository bevat een interactieve leertool die bestaat uit twee hoofdonderdelen:
+
+Interactieve Quiz: Een volledig functionele quizapplicatie gebouwd met HTML, CSS en JavaScript waarmee gebruikers meerkeuzevragen kunnen beantwoorden en direct feedback ontvangen.
+
+Stap-voor-stap Tutorial: Een gedetailleerde handleiding die uitleg geeft over hoe je zelf een interactieve quiz kunt bouwen vanaf nul, zelfs zonder programmeerervaring.
 
 ---
 
-🚀 Functionaliteiten van de quiz (map: quiz/)
+🚀 Functionaliteiten van de quiz
 Dynamisch gegenereerde quiz op basis van een JavaScript-array
 
-Antwoorden via radio buttons
+Dynamisch gegenereerde vragen vanuit een JavaScript array
 
-Feedback na elke vraag (juist/fout + correct antwoord)
+Meerkeuzevragen via radio buttons
 
-Score wordt getoond na het indienen
+Directe feedback na elke vraag (juist/fout + correct antwoord)
 
-Inschakeling/uitschakeling van antwoordopties na feedback
+Score tracking en weergave aan het eind
 
+Automatische uitschakeling van antwoordopties na feedback
+
+
+🚀 Functionaliteiten van de tutorial
+Complete stap-voor-stap instructies verdeeld over 4 fasen:
+
+Setup: Installatie van tools en aanmaken van projectstructuur
+
+HTML: De basisstructuur van de quiz opbouwen
+
+JavaScript: Functionaliteit toevoegen aan de quiz
+
+CSS: Styling en opmaak van de quiz
+
+Interactieve code-voorbeelden via CodePen embeddings
+
+Duidelijke uitleg over de werking van elke codesectie
+
+Responsive design voor gebruik op zowel desktop als mobiel
 ---
 
-🛠️ Hoe gebruik je dit project?
-Navigeer naar de map quiz/.
-
-Open het bestand index.html in je browser.
-
-Beantwoord de vragen en klik op Verzend om je score te zien.
+🛠️ Github pages link : https://pgmgent-atwork2.github.io/project-1-workshop-start-to-code-yabetse-en-leon/
 
 ---
 
